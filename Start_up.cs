@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Change_Scene : MonoBehaviour
+public class Start_up : MonoBehaviour
 {
   public GameObject name;
   void Start(){
-    name.activeSelf(false);
+    name.SetActive(false);
   }
   void OnCollisionEnter(Collision other){
-    name.activeSelf(true);
+    name.SetActive(true);
  }
 }
