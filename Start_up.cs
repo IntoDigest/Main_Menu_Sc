@@ -7,7 +7,7 @@ public class Change_Scene : MonoBehaviour
 {
   public GameObject name;
   void Start(){
-    name.acctiveSelf(false);
+    name.activeSelf(false);
   }
   void OnCollisionEnter(Collision other){
     name.activeSelf(true);
