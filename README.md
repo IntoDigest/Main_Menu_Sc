@@ -12,4 +12,6 @@
   SaveButton.cs<br>
     This [scrpit](https://github.com/IntoDigest/Main_Source_Code/blob/master/Save/SaveButton.cs) use to save last scene before the Player close the Program.<br>
   LoadSave.cs<br>
-    This [script](https://github.com/IntoDigest/Main_Source_Code/blob/master/Save/LoadSave.cs) use to load last scene that player played.
+    This [script](https://github.com/IntoDigest/Main_Source_Code/blob/master/Save/LoadSave.cs) use to load last scene that player played.<br>
+- Quit.cs<br>
+    This [script](nttps://github.com/IntoDigest/Main_Source_Code/blob/master/Quit.cs) use to exit the program. Please use with Collider.<br>
