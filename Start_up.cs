@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Start_up : MonoBehaviour
 {
-  public GameObject name;
+  public GameObject Start_Menu;
   void Start(){
-    name.SetActive(false);
+    Start_Menu.SetActive(false);
   }
   void OnCollisionEnter(Collision other){
-    name.SetActive(true);
+    Start_Menu.SetActive(true);
  }
 }
