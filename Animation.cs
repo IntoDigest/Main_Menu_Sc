@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Animation : MonoBehaviour
 {
     //public List <GameObject> Items;
-
+    public Text Loading;
     // Start is called before the first frame update
     void Start() 
     {
@@ -16,7 +16,7 @@ public class Animation : MonoBehaviour
     IEnumerator wait_spawn(){
         while(true){
             yield return new WaitForSeconds(5);
-            SceneManager.LoadScene("Next_Scene");
+            SceneManager.LoadScene(Loading);
         }
     }
 }
