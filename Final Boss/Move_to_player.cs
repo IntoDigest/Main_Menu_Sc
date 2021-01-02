@@ -12,12 +12,12 @@ public class Move_to_player : MonoBehaviour
     private Vector3 objpos;
     void Update(){
         
-        speed = Time.deltaTime
+        float real_speed = speed * Time.deltaTime;
 
         playerpos = player.transform.position;
-        objpos = trasnform.position;
+        objpos = transform.position;
 
-        transform.position = Vector3.MoveTowards(objpos, playerpos, speed);
+        transform.position = Vector3.MoveTowards(objpos, playerpos, real_speed);
 
     }
 }
