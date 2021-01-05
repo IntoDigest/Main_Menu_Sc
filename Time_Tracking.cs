@@ -15,7 +15,7 @@ public class Time_Tracking : MonoBehaviour
         while(true){
             yield return new WaitForSeconds(time_to_destroy);
 
-            Destroy(gameobject);
+            Destroy(Gameobject);
         }
     }
 }
