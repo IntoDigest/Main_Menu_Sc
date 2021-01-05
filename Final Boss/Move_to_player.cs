@@ -10,11 +10,15 @@ public class Move_to_player : MonoBehaviour
 
     private Vector3 playerpos;
     private Vector3 objpos;
+    void Start() {
+        playerpos = player.transform.position;
+    }
+    
     void Update(){
         
         float real_speed = speed * Time.deltaTime;
 
-        playerpos = player.transform.position;
+        
         objpos = transform.position;
 
         transform.position = Vector3.MoveTowards(objpos, playerpos, real_speed);
