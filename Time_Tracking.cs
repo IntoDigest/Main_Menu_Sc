@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Time_Tracking : MonoBehaviour
 {
+    public GameObject ob;
     public int time_to_destroy ;
     void Start() 
     {
@@ -15,7 +16,7 @@ public class Time_Tracking : MonoBehaviour
         while(true){
             yield return new WaitForSeconds(time_to_destroy);
 
-            Destroy(Gameobject);
+            Destroy(obj);
         }
     }
 }
