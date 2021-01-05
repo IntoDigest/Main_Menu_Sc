@@ -12,11 +12,11 @@ public class Move_to_player : MonoBehaviour
     private Vector3 playerpos;
     private Vector3 objpos;
     void Start() {
-        playerpos = player.transform.position;
+        playerpos = now.player;
     }
     
     void Update(){
-        playerpos = now.playing;
+        //playerpos = now.playing;
         float real_speed = speed * Time.deltaTime;
 
         
