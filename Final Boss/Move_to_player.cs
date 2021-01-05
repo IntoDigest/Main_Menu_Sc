@@ -16,7 +16,7 @@ public class Move_to_player : MonoBehaviour
     }
     
     void Update(){
-        
+        playerpos = now.playing;
         float real_speed = speed * Time.deltaTime;
 
         
