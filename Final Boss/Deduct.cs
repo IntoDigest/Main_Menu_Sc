@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Deduct : MonoBehaviour
 {  
-    public GameObject Boss;
+    //public GameObject Boss;
     void OnCollisionEnter(Collision other) {
-        if(other.gameObject == Boss){
+        if(other.gameObject == get_boss.Boss){
             boss.boss_hp -= 1;
         }   
         Destroy(gameObject); 
