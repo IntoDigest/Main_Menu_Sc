@@ -8,9 +8,8 @@ public class Deduct : MonoBehaviour
     public GameObject Boss;
     void OnCollisionEnter(Collision other) {
         if(other.gameObject == Boss){
-            
             boss.boss_hp -= 1;
         }   
-        Destroy(gameobject); 
+        Destroy(gameObject); 
     }
 }
