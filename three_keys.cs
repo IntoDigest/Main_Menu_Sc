@@ -11,12 +11,12 @@ public class three_keys : MonoBehaviour
     public GameObject Key1;
     public GameObject Key2;
     public GameObject Key3;
-    public Text scenetoload;
+    //public Text scenetoload;
 
     
     void Update(){
         if(destroyed(Key1) && destroyed(Key2) && destroyed(Key3)){
-            SceneManager.LoadScene(scenetoload);
+            SceneManager.LoadScene(""); //Next Scene
         }
     }
 
