@@ -1,5 +1,5 @@
 /*
- * ใส่ใน OBJ ที่ใช้เป็นกุญแจ
+ * ใส่ใน OBJ อะไรก็ได้ที่ไม่ถูกทำลาย
  */
 using System.Collections;
 using System.Collections.Generic;
