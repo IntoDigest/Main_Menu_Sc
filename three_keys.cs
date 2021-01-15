@@ -20,7 +20,7 @@ public class three_keys : MonoBehaviour
         }
     }
 
-    void destroyed(GameObject name){
+    bool destroyed(GameObject name){
         if(name == null){
             return true;
         }
