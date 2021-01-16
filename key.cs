@@ -9,9 +9,10 @@ using UnityEngine.SceneManagement;
 public class key : MonoBehaviour
 {
     public GameObject keyhole;
-    void private void OnCollisionEnter(Collision other) {
-        if(other.gameObject.name == keyhole.name){
+    void OnCollisionEnter(Collision other) {
+        if(other.gameObject == keyhole){
             Destroy(gameObject);
+            Destroy(other.gameObject);
         }
     }
 }
