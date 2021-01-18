@@ -15,7 +15,7 @@ public class player_health : MonoBehaviour
     void Start(){
         SetHealth(MaxHealth);
     }
-    void OnColliderEnter(Collsion other){
+    void OnCollisionEnter(Collsion other){
         if(other.gameObejct.tag == "Bullet"){
             Destroy(other.gameObject);
             health -= damage;
