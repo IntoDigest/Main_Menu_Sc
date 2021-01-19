@@ -1,18 +1,30 @@
+  
 /*
- * ใส่ใน OBJ ที่ใช้เป็นกุญแจ
+ * ใส่ใน Player
  */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class key : MonoBehaviour
+public class player_health : MonoBehaviour
 {
-    public GameObject keyhole;
-    void OnCollisionEnter(Collision other) {
-        if(other.gameObject == keyhole){
-            Destroy(gameObject);
+    public int damage; //ดาเมจของกระสุน
+    public int MaxHealth;
+    public int x,y,z; //จุดเริ่มต้นของ Player
+    private int health;
+    void Start(){
+        SetHealth(MaxHealth);
+    }
+    void OnCollisionEnter(Collision other){
+        if(other.gameObject.tag == "Bullet"){
             Destroy(other.gameObject);
+            health -= damage;
         }
+    }
+
+    void SetHealth(int MaxHealth){
+        health = MaxHealth;
+        gameObject.transform.position = new Vector3(x,y,z);
     }
 }
