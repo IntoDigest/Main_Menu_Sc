@@ -10,14 +10,14 @@ public class UI_2 : MonoBehaviour
     public static bool mk_2 = false;
     void Start(){
         pos = Player_.transform.position;
-        SetActive(false);
+        gameObject.SetActive(false);
     }
     void Update(){
         if(UI_1.mk_1 == true && mk_2 == false){
-            SetActive(true);
+            gameObject.SetActive(true);
         }
         if(pos != Player_.transform.position){
-            SetActive(false);
+            gameObject.SetActive(false);
             mk_2 = true;
         }
     }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Interface : MonoBehaviour
 {
     void Start(){
-        StartCoroutine(func);
+        StartCoroutine(func());
     }
 
     IEnumerator func(){

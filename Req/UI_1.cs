@@ -14,7 +14,7 @@ public class UI_1 : MonoBehaviour
     }
     void Update(){
         if(hud == null && mark == false){
-            SetActive(true);
+            gameObject.SetActive(true);
             StartCouroutine(ws());
         }
     }
@@ -23,7 +23,7 @@ public class UI_1 : MonoBehaviour
         while(true){
             yield return WaitForSeconds(2);
             
-            SetActive(false);
+            gameObject.SetActive(false);
             mark = true;
             mk_1 = true;
             break;

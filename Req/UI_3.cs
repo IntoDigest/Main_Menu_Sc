@@ -11,14 +11,14 @@ public class UI_3 : MonoBehaviour
     public static bool mk_3 = false;
 
     void Start(){
-        SetActive(false);
+        gameObject.SetActive(false);
     }
     void Update(){
         if(UI_2.mk_2 == true && mk_3 == false){
-            SetActive(true);
+            gameObject.SetActive(true);
         }
         if(Finger.GetLastState(hand_t)){
-            SetActive(false);
+            gameObject.SetActive(false);
             mk_3 = true;
         }
     }

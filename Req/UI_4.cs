@@ -10,18 +10,18 @@ public class UI_4 : MonoBehaviour
     public GameObject obj;
     public int x,y,z;
     void Start(){
-        SetActive(false);
+        gameObject.SetActive(false);
     }
     private Vector3 pos ;
     void Update(){
         if(UI3.mk_3 == true && act == true){
-            SetActive(true);
+            gameObject.SetActive(true);
             act = true;
             Instantiate(obj,new Vector3(x,y,z),Quaternion.identity);
             pos = obj.transform.psoition;
         }
         if(pos!=obj.transform.position){
-            SetActive(false);
+            gameObject.SetActive(false);
 
         }
     }

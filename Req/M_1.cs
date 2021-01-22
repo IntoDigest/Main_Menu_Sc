@@ -8,11 +8,11 @@ public class M_1 : MonoBehaviour
 {
     public string nex;
     void Start(){
-        SetActive(false);
+        gameObject.SetActive(false);
     }
     void Update(){
         if(Q_1.owo == true){
-            SetActive(false);
+            gameObject.SetActive(false);
             StartCouroutine(ws());
         }
     }
