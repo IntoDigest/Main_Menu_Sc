@@ -22,7 +22,6 @@ public class UI_4 : MonoBehaviour
         }
         if(pos!=obj.transform.position){
             gameObject.SetActive(false);
-
         }
     }
 }
