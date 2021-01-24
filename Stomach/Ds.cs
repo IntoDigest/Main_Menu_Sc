@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Ds : MonoBehaviour
 {
-    OnCollisionEnter(Collision other){
+    void OnCollisionEnter(Collision other){
         if(other.gameObject.tag == "Bac"){
             Destroy(other.gameObject);
             Bac.Count -= 1;
