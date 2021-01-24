@@ -10,11 +10,11 @@ public class Ds : MonoBehaviour
     void Start(){
         Part.SetActive(false);
     }
-    public GameObject Part;
+    //public GameObject Part;
     void OnCollisionEnter(Collision other){
         if(other.gameObject.tag == "Bac"){
             Destroy(other.gameObject);
-            Part.SetActive(true);
+            //Part.SetActive(true);
             Bac.Count -= 1;
         }
     }
