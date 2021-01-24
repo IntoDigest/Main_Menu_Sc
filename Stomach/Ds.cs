@@ -7,16 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class Ds : MonoBehaviour
 {
-    //void Start(){
-    //    Part.SetActive(false);
-    //}
-    //public GameObject Part;
+    public GameObject Part;
     void OnCollisionEnter(Collision other){
         if(other.gameObject.tag == "Bac"){
+            Vector3 pos = other.gameObejct.transform.position;
             Destroy(other.gameObject);
-            //Part.SetActive(true);
-            Ba.Ef = true;
             Bac.Count -= 1;
+            Instantiate(Part,pos,Quaternion.identity);
         }
+        
     }
 }
