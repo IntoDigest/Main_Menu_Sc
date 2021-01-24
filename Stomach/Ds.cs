@@ -15,6 +15,7 @@ public class Ds : MonoBehaviour
         if(other.gameObject.tag == "Bac"){
             Destroy(other.gameObject);
             //Part.SetActive(true);
+            Bac.Ef = true;
             Bac.Count -= 1;
         }
     }
