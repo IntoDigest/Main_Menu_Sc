@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class Ds : MonoBehaviour
 {
-    void Start(){
-        Part.SetActive(false);
-    }
+    //void Start(){
+    //    Part.SetActive(false);
+    //}
     //public GameObject Part;
     void OnCollisionEnter(Collision other){
         if(other.gameObject.tag == "Bac"){
