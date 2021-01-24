@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Bac : MonoBehaviour
 {
-    public static Count;
+    public static int Count;
     public string cutscene;
     void Start(){
         Count = 6;
