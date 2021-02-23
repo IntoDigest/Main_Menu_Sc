@@ -20,7 +20,7 @@ public class par : MonoBehaviour
 		else{
 			//SceneManager.LoadScene(Reload);
 			wrong.SetActive(true);			
-			yield WaitForSeconds(3);
+			new WaitForSeconds(3);
 			wrong.SetActive(false);	
 		}
 	}
