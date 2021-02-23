@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UIs : MonoBehaviour
+public class correct_answer : MonoBehaviour
 {
     public string nex;
     void Start()

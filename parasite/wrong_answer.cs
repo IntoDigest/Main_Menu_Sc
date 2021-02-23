@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UIs : MonoBehaviour
+public class wrong_answer : MonoBehaviour
 {
     public GameObject Wrong_msg ;
     void Start(){
